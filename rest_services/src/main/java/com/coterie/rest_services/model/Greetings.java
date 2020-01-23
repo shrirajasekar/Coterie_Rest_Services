@@ -8,8 +8,27 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class Greetings {
 
-    public final long id;
-    public final String message;
+    public long id;
+    public String message;
+
+    public long getId() {
+        return this.id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getMessage() {
+        return this.message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+	    
+
 
     @Autowired
     public Greetings(long id, String message) {
@@ -22,16 +41,7 @@ public class Greetings {
         this.message="Default Constructor says Hello";
 	}
 
-	public long getId() {
-        return this.id;
-    }
-
-
-    public String getMessage() {
-        return this.message;
-    }
-
-
+	
 
     @Override
     public String toString() {
