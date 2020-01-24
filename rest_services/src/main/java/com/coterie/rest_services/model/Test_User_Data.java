@@ -7,7 +7,7 @@ import org.springframework.data.annotation.Id;
 /**
  * UserData
  */
-public class UserData {
+public class Test_User_Data {
 
     @Id
     private ObjectId _id;
@@ -66,7 +66,7 @@ public class UserData {
     }
     
 
-    public UserData(ObjectId _id, String firstName, String lastName, String DOB, String age, Address address) {
+    public Test_User_Data(ObjectId _id, String firstName, String lastName, String DOB, String age, Address address) {
         this._id = _id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -75,7 +75,7 @@ public class UserData {
         this.address = address;
     }
 
-    public UserData() {
+    public Test_User_Data() {
     }
 
 

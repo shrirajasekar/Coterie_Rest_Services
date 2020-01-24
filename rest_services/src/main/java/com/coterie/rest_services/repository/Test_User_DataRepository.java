@@ -3,7 +3,7 @@ package com.coterie.rest_services.repository;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.coterie.rest_services.model.UserData;
+import com.coterie.rest_services.model.Test_User_Data;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 /**
  * UserDataRepository
  */
-public interface TestUserDataRepository extends MongoRepository<UserData, String> {
+public interface Test_User_DataRepository extends MongoRepository<Test_User_Data, String> {
 
     // UserData findBy_id(ObjectId _id);
     // List<UserData> findByFirstName(String firstName);
