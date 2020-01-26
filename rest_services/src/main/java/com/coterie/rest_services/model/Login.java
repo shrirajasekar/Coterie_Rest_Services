@@ -8,7 +8,7 @@ import org.springframework.data.annotation.Id;
 public class Login {
 
     @Id
-  public String id;
+  public String _id;
 
   public String firstName;
   public String lastName;
@@ -24,6 +24,6 @@ public class Login {
   public String toString() {
     return String.format(
         "Login[id=%s, firstName='%s', lastName='%s']",
-        id, firstName, lastName);
+        _id, firstName, lastName);
   }
 }

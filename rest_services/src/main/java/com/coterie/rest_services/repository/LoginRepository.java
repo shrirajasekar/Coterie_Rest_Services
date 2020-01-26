@@ -12,7 +12,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
  */
 @RepositoryRestResource(collectionResourceRel = "login", path = "login")
 public interface LoginRepository extends MongoRepository<Login, String> {
-    public Login findByFirstName(String firstName);
-    public List<Login> findByLastName(String lastName);  
-    
+    public Login findByFirstName(@Param("firstName") String firstName);
+    public List<Login> findByLastName(@Param("lastName") String lastName);  
+    public List<Login> findAll();
 }
